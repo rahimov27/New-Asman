@@ -1,0 +1,122 @@
+{% block title_page %}
+{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon.png' %}">
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'css/videos.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<header id="masthead" class="site-header">
+    <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+            <div class="navbar-header">     
+                <a href="/" class="site-title"><span>Asman</span>Electronics</a>
+            </div>
+            <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li class="active"><a href="/" data-toggle="dropdown">Home</a></li> -->
+                    <li class="active"><a href="/">Главная</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li><a href="{% url 'blog' %}">Машины</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'blog' %}">Машины</a></li>
+                    <li><a href="{% url 'contact' %}">Запись на обратный звонок</a></li>
+                </ul>
+            </div>
+        </div>   
+    </nav>
+</header>
+</body>
+{% block content %}
+{% endblock %}
+
+<footer id="colophon" class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a class="site-title"><span>Asman</span>Electronics</a>
+                <p>We're a digital agency focused on creative and results-driven solutions.</p>
+                <p>We measure our success by the results we drive for our clients.</p>
+            </div>
+            <div class="col-lg-offset-4 col-md-3 col-sm-4 col-md-offset-2 col-sm-offset-0 col-xs-6 ">
+                <h3>Контакты</h3>
+                <ul class="list-unstyled {% url 'contact' %}s">
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:asman-electronics@gmail.com">asman-electronics@gmail.com</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+996 990 24 00 00">+996 990 24 00 00</a></li>
+                    <li><i class="fa fa-fax" aria-hidden="true"></i><a href="++996 990 24 00 00">+996 990 24 00 00</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i><p>Aдрес: Кыргызстан, город Бишкек ул. Жибек-Жолу 451</p></li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs"></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                <h3>Ссылки</h3>
+                <ul class="list-unstyled">
+                    <li class="active"><a href="/">Главная</a></li>
+                    <!-- <li class="active"><a href="/">Home</a></li> -->
+                    <li><a href="{% url 'blog' %}">Машины</a></li>
+                    <li><a href="{% url 'contact' %}">Запись на обратный звонок</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="social-links">
+                        <a class="instagram-bg" href="https://instagram.com/asman_electronics.kg?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                        <a class="facebook-bg" href="https://www.facebook.com/asman_electronicskg-105519778573027"><i class="fa fa-facebook"></i></a>
+                    </div><!-- /.social-links -->
+                </div>
+                <div class="col-xs-4">
+                    <div class="text-right">
+                        <p>&copy; AsmanElectronics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.min.js' %}"></script>
+<script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+

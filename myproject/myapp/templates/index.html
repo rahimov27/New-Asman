@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title_page %}
+<title>index</title>
+{% endblock title_page %}
+{% block content %}
+<div id="hero" class="hero overlay">
+    <div class="hero-content">
+        <div class="hero-text">
+            <a href="{% url 'contact' %}" class="btn btn-border">Запись на обратный звонок</a>
+        </div><!-- /.hero-text -->
+    </div><!-- /.hero-content -->
+</div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section class="site-section section-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>Responsive web design</h2>
+                        <p>Responsive Web design is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation. The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries</p>
+                    </div>
+                    <div class="col-sm-7 hidden-xs">
+                        <div class="et5image">
+                            <img class="et5" src="{% static 'images/et5_banner.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-features -->
+
+        <section class="site-section section-services gray-bg text-center">
+            <div class="videos">
+                <video class="video1" controls>
+                    <source src="{% static 'img/asman1.mp4' %}" type="video/mp4">
+                    <source src="{% static 'img/asman1.mp4' %}" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+
+                <video class="video2" controls>
+                    <source src="{% static 'img/asman2.mp4' %}" type="video/mp4">
+                    <source src="{% static 'img/asman2.mp4' %}" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </section><!-- /.section-services -->
+
+        <section class="site-section section-map-feature text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="100" data-speed="1000"></p>
+                            <h3>Экологичность</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="100" data-speed="2000">0</p>       
+                            <h3>Заряд</h3>
+                        </div> <!-- /.counter-item -->      
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="100" data-speed="1500">0</p>
+                            <h3>Довольные клиенты</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="100" data-speed="3000">0</p>
+                            <h3>Качество</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                </div>
+            </div>
+            
+        </section><!-- /.section-map-feature -->
+
+        <section class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading-separator">Latest Work</h2>
+                    <p class="subheading-text">This is some of our best work</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="hover-text-one">
+                            <figure class="effect-text-three">
+                              <img src="{% static 'images/salom.jpeg' %}" alt=""/>
+                                <figcaption>
+                              <h3>Lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </figcaption>			
+                            </figure>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="hover-text-one">
+                            <figure class="effect-text-three">
+                              <img src="{% static 'images/1.jpeg' %}" alt=""/>
+                                <figcaption>
+                              <h3>Lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </figcaption>			
+                            </figure>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="hover-text-one">
+                            <figure class="effect-text-three">
+                              <img src="{% static 'images/3.jpeg' %}" alt=""/>
+                                <figcaption>
+                              <h3>Lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </figcaption>			
+                            </figure>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="hover-text-one">
+                            <figure class="effect-text-three">
+                              <img src="{% static 'images/4.jpeg' %}" alt=""/>
+                                <figcaption>
+                              <h3>Lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </figcaption>			
+                            </figure>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="hover-text-one">
+                            <figure class="effect-text-three">
+                              <img src="{% static 'images/5.jpeg' %}" alt=""/>
+                                <figcaption>
+                              <h3>Lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </figcaption>			
+                            </figure>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-portfolio -->
+
+        <section class="site-section section-newsletter text-center">
+            <!-- <div class="container">
+                <h2>Subscribe our newsletters</h2>
+                <form class="form-group newsletter-group">
+                    <input type="email" class="form-control" placeholder="Your e-mail" required>
+                    <button class="btn btn-green" type="button">Subscribe</button>
+                </form><!-- /.newsletter-group -->
+            <!-- </div> --> 
+        </section><!-- /.section-newsletter -->
+
+    </main><!-- /#main -->
+{% endblock %}
