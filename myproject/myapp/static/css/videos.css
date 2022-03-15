@@ -1,38 +1,38 @@
 .video1 {
   width: 345px;
   height: 345px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .video2 {
   width: 345px;
   height: 345px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .videos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
-  align-content: center;
+  align-content: space-around;
 }
 @media (max-width: 900px) {
   .videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     align-content: space-around;
   }
   .video2 {
-    margin-top: 30px;
-    width: 60%;
+    width: 35%;
     height: 50%;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   .video1 {
-    width: 60%;
+    width: 35%;
     height: 50%;
+    border-radius: 10px;
   }
 }

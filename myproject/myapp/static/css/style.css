@@ -904,14 +904,12 @@ body {
 
 /* Section: Features */
 .section-features h2 {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-size: 30px;
 }
 
 .section-features img {
-  right: -56px;
-  height: 267px;
-  margin-top: 0px;
+  width: 90%;
 }
 
 /* Section: Services */
@@ -1576,8 +1574,7 @@ a.facebook-bg:hover {
   width: 100%;
 }
 .et5 {
-  width: 500px;
-  margin-left: 110px;
+  margin-left: 60px;
 }
 .flip-card {
   background-color: transparent;
@@ -1645,14 +1642,15 @@ a.facebook-bg:hover {
     width: 100%;
   }
   .flip-image {
-    width: 80%;
-    margin-top: 25px;
+    width: 85%;
+    margin-top: 60px;
   }
 }
 .row-27 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 .car-20 {
   color: #f5f5f5cc;
