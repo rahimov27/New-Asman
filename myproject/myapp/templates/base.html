@@ -30,7 +30,9 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
     <link href="{% static 'css/videos.css' %}" rel="stylesheet">
+    <link href="{% static 'css/icons.css' %}" rel="stylesheet">
 
+    
 </head>
 <body>
 <header id="masthead" class="site-header">
@@ -54,7 +56,14 @@
             </div>
         </div>   
     </nav>
+    <ul class="social-icons-1">
+        <li><a href="#"><img src="{% static 'img/face.png' %}" alt=""/></a></li>
+        <li><a href="#"><img src="{% static 'img/insta.png' %}" alt=""/></a></li>
+        <li><a href="#"><img src="{% static 'img/gmail.png' %}" alt=""/></a></li>
+        <li><a href="#"><img src="{% static 'img/whats.png' %}" alt=""/></a></li>
+    </ul>
 </header>
+
 </body>
 {% block content %}
 {% endblock %}

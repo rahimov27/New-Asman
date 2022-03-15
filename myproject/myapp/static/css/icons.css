@@ -1,0 +1,101 @@
+.social-icons-1 {
+  padding: 0;
+  list-style: none;
+  margin: 10px;
+  display: grid;
+  margin-left: 85%;
+  position: fixed;
+}
+.social-icons-1 li {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  margin: 7px;
+}
+.social-icons-1 i,
+.social-icons-1 img {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.social-icons-1 a {
+  display: inline-block;
+}
+.social-icons-1 a:before {
+  transform: scale(1);
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #337ab7, #2d6b9f);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+}
+.social-icons-1 a:hover:before {
+  transform: scale(0);
+  transition: all 0.3s ease-in;
+}
+.social-icons-1 a:hover i,
+.social-icons-1 a:hover img {
+  transform: scale(1.8);
+  color: #337ab7;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 900px) {
+  .social-icons-1 {
+    padding: 0;
+    list-style: none;
+    margin: 10px;
+    display: grid;
+    margin-top: 20%;
+    margin-left: 80%;
+    position: fixed;
+  }
+  .social-icons-1 li {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    margin: 5px;
+  }
+  .social-icons-1 i,
+  .social-icons-1 img {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: all 0.3s ease-out;
+  }
+  .social-icons-1 a {
+    display: inline-block;
+  }
+  .social-icons-1 a:before {
+    transform: scale(1);
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #337ab7, #2d6b9f);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+  .social-icons-1 a:hover:before {
+    transform: scale(0);
+    transition: all 0.3s ease-in;
+  }
+  .social-icons-1 a:hover i,
+  .social-icons-1 a:hover img {
+    transform: scale(1.8);
+    color: #337ab7;
+    transition: all 0.3s ease-in;
+  }
+}
